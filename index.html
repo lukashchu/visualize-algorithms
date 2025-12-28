@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bogo">Bogo Sort (slow)</option>
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="merge">Merge Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="radix">Radix Sort</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="size">Array Size: <span id="sizeValue">30</span></label>
+                <input type="range" id="size" min="5" max="100" value="30">
+            </div>
+
+            <div class="control-group">
+                <label for="speed">Speed: <span id="speedValue">150</span></label>
+                <input type="range" id="speed" min="1" max="299" value="150">
+            </div>
+
+            <div class="buttons">
+                <button id="generate">Generate New Array</button>
+                <button id="sort">Start Sorting</button>
+            </div>
+        </div>
+
+        <div id="bars-container" class="bars-container"></div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
